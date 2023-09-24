@@ -1,0 +1,56 @@
+h1 {
+	font-family: mojito;
+	color: rgb(242, 240, 235);
+	font-size: 30px;
+	margin: 0px;
+	padding: -5px 5px 5px 5px;
+}
+
+/** this is for the photo **/
+#almo {
+	font-family: mojito;
+	font-size: 35px;
+	margin: 105px 0px 5px 5px;
+	color: rgb(242, 240, 235);
+	padding-inline-start: 25px;
+}
+
+p {
+	font-family: montserrat;
+	font-size: 15px;
+	color: rgb(242, 240, 235);
+	margin-right: 15px;
+}
+
+#id {
+	align-content: left;
+
+}
+
+#pic {
+	margin: 20px 0px 20px 30px;
+}
+
+.column {
+	float: left;
+	width: 17%;
+	padding: 5px;
+}
+
+ul {
+	font-family: montserrat;
+	font-size: 13px;
+	color: rgb(242, 240, 235);
+	text-transform: uppercase;
+	align-content: left;
+	margin: 10px 0px 0px 0px;
+	padding-inline-start: 5px;
+}
+
+body {
+      height: 900px;
+      background-image: linear-gradient(to bottom right, hotpink, red);
+    }
+
+
+
