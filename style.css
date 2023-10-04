@@ -24,4 +24,30 @@ body {
 
 **/
 
+* {
+	padding: 20px;
+	margin: 0, auto;
+}
+
+body {
+	font-family: montserrat;
+}
+
+a {
+	margin: 0, auto;
+	padding: 20px;
+	color: black;
+}
+
+.button {
+	background-color: lightblue;
+}
+
+.button2{
+	background-color: green;
+}
+
+.button3{
+	background-color: yellow;
+}
 
