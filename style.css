@@ -1,0 +1,27 @@
+/** style sheet **/
+/** 
+img {
+	width: 100%;
+	margin: 5px;
+	padding: .5px 5px;
+}
+
+h1 {
+	text-align: left;
+	font-family: montserrat;
+	margin: 1em;
+	padding: 10px;
+}
+
+body {
+	background-image: linear-gradient(to bottom, lightblue, lavender );
+}
+
+.container-fluid {
+	width: 100%;
+	background-color: lavender;
+}
+
+**/
+
+
