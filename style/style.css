@@ -1,0 +1,75 @@
+/** style sheet
+organize style sheets in alphabetical order
+
+1. NAV DESIGN
+2. HOME PAGE CONTENT
+**/
+
+/** MULTIPAGE **/
+
+html {
+	box-sizing: border-box;
+}
+
+/** 1. NAV DESIGN **/
+
+a { 
+	/** Text design **/
+	text-decoration: none;
+	color: red;
+	font-family: Montserrat;
+	/** measurements **/
+	padding: 15px;
+	margin: 0px;
+}
+
+#logo {
+	/** measurements **/
+	max-height: 25px;
+	margin: 3px 0 0 10px;
+}
+
+nav {
+	/** measurements **/
+	margin: 20px;
+	padding-right: 35px;
+}
+
+#navbar {
+	/** design **/
+	background-color: pink;
+	border-radius: 40px;
+	/** measurements **/
+	padding: 10px;
+	margin: 0, auto;
+}
+
+#navtions { /** nav options lol **/
+	/** measurements **/
+	margin-top: 2px;
+	padding-top: 20px;
+}
+
+ul {
+	/** design **/
+	list-style: none;
+}
+
+/** 2. HOME PAGE CONTENT **/
+
+.cpbuttons {
+	/** design **/
+	border-radius: 30px;
+	background-color: lavender;
+	display: 25vw;
+
+	/** measurements **/
+	margin: 15px;
+	padding: 20px;
+
+}
+
+#crab {
+	width: 55%;
+}
+

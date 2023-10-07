@@ -1,0 +1,46 @@
+/** grid style sheet
+
+1. NAV DESIGN
+2. HOME PAGE CONTENT
+
+**/
+
+/** MULTIPAGE **/
+
+.row {
+	/** in: 1, 2 **/
+	display: flexbox;
+	display: flex;
+	flex: 30%;
+	max-height: 30px;
+}
+
+/** 1. NAVIGATION **/
+
+.container {
+	width: 95%;
+	padding
+}
+
+.navlumn {
+	max-width: 25%;
+	padding-top: 7px;
+	margin: 0;
+}
+
+.col-3 {
+	float: left;
+	width: 262.5px;
+	margin: 0 15px;
+	/* background-color: PeachPuff; */
+}
+
+.col-8 {
+	float: left;
+	width: 750px;
+	margin: 0 15px;
+	/* background-color: PeachPuff; */
+}
+
+/** 2. HOMEPAGE CONTENT **/
+
