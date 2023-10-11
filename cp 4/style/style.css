@@ -28,8 +28,8 @@ body {
 	display: flexbox;
 	display: flex;
 	flex-wrap: wrap;
-	margin: 18vh 0 0 0;
-	position: absolute;
+	margin: 160px 0 0 0;
+	/** position: absolute; **/
 
 }
 
@@ -58,7 +58,7 @@ p {
 	font-family: Montserrat;
 	font-size: 1em;
 	max-width: 50%;
-	margin: 50px 5px 5px 5px;
+	/** margin: 50px 5px 5px 5px; **/
 	position: fixed;
 	border-radius: 30px;
 	background-color: lightseagreen;
@@ -75,6 +75,10 @@ p {
 	display: flex;
 	flex-wrap: wrap;
 
+}
+
+span {
+	margin: 20px 0;
 }
 
 #squiddy {
