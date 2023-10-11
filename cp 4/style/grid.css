@@ -1,0 +1,32 @@
+/** grid style sheet**/
+/**
+#button {
+	float: left;
+	width: 50px;
+	margin: 0 15px;
+} **/
+
+.col-2 {
+	float: left;
+	width: 100px;
+	margin: 5px 7px;
+}
+
+.col-3 {
+	float: left;
+	width: 30.25%;
+	margin: 5px 5px;
+}
+
+.col-6 {
+	float: left;
+	width: 55.5%;
+	margin: 0 15px;
+}
+
+#squiddy {
+	float: left;
+	width: 49%;
+
+}
+

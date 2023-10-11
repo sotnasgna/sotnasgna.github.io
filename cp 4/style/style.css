@@ -1,0 +1,86 @@
+/** style sheet
+organize style sheets in alphabetical order
+**/
+
+html {
+	box-sizing: border-box; 
+	/** this helps us keep things in line with each other based on the contaner of the box, rather than inside margins of the box **/
+}
+
+a {
+	font-family: montserrat;
+	text-decoration: none;
+	color: white;
+}
+
+body {
+	height: 100vh;
+	background-image: url(https://images.unsplash.com/photo-1528459801416-a9e53bbf4e17?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3112&q=80);
+
+}
+
+#button {
+	border-radius: 30px;
+	background-color: seagreen;
+	display: flexbox;
+	padding: 15px;
+	text-align: center;
+	display: flexbox;
+	display: flex;
+	flex-wrap: wrap;
+	margin: 18vh 0 0 0;
+	position: absolute;
+
+}
+
+#button:hover {
+	transition: .5s;
+	color: hotpink;
+	background-color: lightskyblue;
+}
+
+h1 {
+	font-family: BlackMango;
+	margin: 5px;
+	padding: 5px;
+}
+
+img {
+	max-width: 100%;
+	
+}
+
+.main {
+	max-width: 100%;
+}
+
+p {
+	font-family: Montserrat;
+	font-size: 1em;
+	max-width: 50%;
+	margin: 50px 5px 5px 5px;
+	position: fixed;
+	border-radius: 30px;
+	background-color: lightseagreen;
+	padding: 20px;
+	mix-blend-mode: multiply;
+	display: flex;
+	width:  40%;
+	display: flexbox;
+	display: flex;
+}
+
+.row {
+	display: flexbox;
+	display: flex;
+	flex-wrap: wrap;
+
+}
+
+#squiddy {
+	position: fixed;
+	z-index: 3;
+	bottom: 0px;
+	right: 50px;
+	width: 40%;
+}
