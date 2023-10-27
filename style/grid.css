@@ -18,8 +18,12 @@
 /** 1. NAVIGATION **/
 
 .container {
-	width: 95%;
-	padding
+	width: 1170px;
+	margin: 0 auto;
+}
+
+.container-fluid {
+	width: 100%;
 }
 
 .navlumn {

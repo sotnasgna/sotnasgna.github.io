@@ -1,0 +1,147 @@
+/** Style Sheet for Product Page **/
+
+/** All code is from memory unless stated otherwise **/
+* {
+	box-sizing: border-box;
+}
+
+/** source: DESN340 Slides **/
+.row:before
+.row:after {
+	content: " ";
+	display: table;
+}
+
+.row:after { 
+	clear: both;
+}
+
+.clearfix:before,
+.clearfix:after {
+
+}
+
+/** NAVIGATION BAR **/
+
+a {
+	text-decoration: none;
+}
+
+li {
+	float: left; /** THIS DISPLAYS THE LIST IN THE RIGHT ORDER
+	IF YOU PUT RIGHT INTO HERE, THE LIST IS GONNA APPEAR BACKWARDS **/
+	padding: 10px;
+	display: ;
+}
+
+nav {
+	margin: 30px 0 40px 0;
+	padding: 10px;
+	border-style: solid;
+	border-color: black;
+	border-radius: 30px;
+	background-color: hotpink;
+}
+
+ul {
+	list-style: none;
+	clear: both;
+	float: right; /** THIS HELPS BRING THE NAV BAR TO THE 
+	RIGHT OF THE PAGE AND THEN WHEN YOU GO UP TO LI FLOAT **/
+
+}
+
+/** REST OF THE PAGE CONTENT **/
+
+aside {
+	font-size: 11px;
+	margin: 20px 0;
+}
+
+button {
+	border-radius: 20px;
+	padding: 8px 12px;
+	background-color: orange;
+	color: white;
+	border-style: none;
+}
+
+button:hover {
+	transition: .01s;
+	background-color: lightcoral;
+}
+
+.chicklet {
+	border-radius: 15px;
+	background-color: lightgrey;
+	margin: 10px 5px;
+	padding: 40px 20px 20px 20px;
+
+}
+
+h1 {
+	text-transform: uppercase;
+	font-size: 70px;
+	margin: 100px 0;
+}
+
+h2 {
+	font-size: 45px;
+	margin-top: 30px;
+}
+
+h3 {
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 20px;
+
+}
+
+img {
+	height: 30%;
+	
+	position: relative;
+	animation: rtl 5s;
+	animation-iteration-count: 1;
+}
+
+p {
+	font-size: 14px;
+	margin-top: 10px;
+}
+
+section {
+	margin: 90px 0;
+}
+
+
+/** experiment **/ 
+
+@keyframes rtl {
+	0% {right: 0;}
+	/**25% {right: 100px;}
+	50% {right: 125px;}
+	75% {right: 150px;}**/
+	100% {right: 170px;}
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
