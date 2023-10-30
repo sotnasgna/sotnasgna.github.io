@@ -1,132 +1,664 @@
-/** Style Sheet for Product Page **/
+/** PROJECT TWO STYLE SHEET 
 
-/** All code is from memory unless stated otherwise **/
-* {
-	box-sizing: border-box;
+
+1. BOX MODEL FIX
+2. CLEAR FIX
+3. IMG STYLING
+4. TYPE RULES
+5. HEADER
+6. HOMEPAGE
+7. PENCIL PAGE 
+8. ABOUT PAGE
+9. FOOTER 
+
+
+School Bus Yellow: #ffd800
+Brunswick Green: #1b4d3e
+**/ 
+
+.white {
+	color: whitesmoke;
 }
 
-/** source: DESN340 Slides **/
-.row:before
+/********** 1. BOX MODEL FIX **********/
+
+html {
+	box-sizing: border-box;
+}
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+
+/********** 2. CLEAR FIX **********/
+
+.row:before,
 .row:after {
 	content: " ";
 	display: table;
 }
 
-.row:after { 
+.row:after {
 	clear: both;
 }
 
-.clearfix:before,
-.clearfix:after {
-
-}
-
-/** NAVIGATION BAR **/
-
-a {
-	text-decoration: none;
-}
-
-li {
-	float: left; /** THIS DISPLAYS THE LIST IN THE RIGHT ORDER
-	IF YOU PUT RIGHT INTO HERE, THE LIST IS GONNA APPEAR BACKWARDS **/
-	padding: 10px;
-	display: ;
-}
-
-nav {
-	margin: 30px 0 40px 0;
-	padding: 10px;
-	border-style: solid;
-	border-color: black;
-	border-radius: 30px;
-	background-color: hotpink;
-}
-
-ul {
-	list-style: none;
-	clear: both;
-	float: right; /** THIS HELPS BRING THE NAV BAR TO THE 
-	RIGHT OF THE PAGE AND THEN WHEN YOU GO UP TO LI FLOAT **/
-
-}
-
-/** REST OF THE PAGE CONTENT **/
-
-aside {
-	font-size: 11px;
-	margin: 20px 0;
-}
-
-button {
-	border-radius: 20px;
-	padding: 8px 12px;
-	background-color: orange;
-	color: white;
-	border-style: none;
-}
-
-button:hover {
-	transition: .01s;
-	background-color: lightcoral;
-}
-
-.chicklet {
-	border-radius: 15px;
-	background-color: lightgrey;
-	margin: 10px 5px;
-	padding: 40px 20px 20px 20px;
-
-}
-
-h1 {
-	text-transform: uppercase;
-	font-size: 70px;
-	margin: 100px 0;
-}
-
-h2 {
-	font-size: 45px;
-	margin-top: 30px;
-}
-
-h3 {
-	text-transform: uppercase;
-	text-align: center;
-	font-size: 20px;
-
-}
+/********** 3. IMG STYLING **********/
 
 img {
-	height: 30%;
+	width: 100%;
+}
+
+/********** 4. TYPE RULES **********/
 	
-	position: relative;
-	animation: rtl 5s;
-	animation-iteration-count: 1;
-}
+	/** TYPEFACE LINKS **/
 
-p {
+		@font-face {
+		    font-family: "GT-Super";
+		    src: url("../GT-Super/GT-Super-Display-Super.woff2");
+		}
+
+		@font-face {
+			font-family: "GT-Medium";
+			src: url("../GT-Super/GT-Super-Display-Medium.woff2");
+		}
+
+		@font-face {
+			font-family: "GT-Light";
+			src: url("../GT-Super/GT-Super-Display-Regular.woff2");
+		}
+
+
+	/** TYPE HIERARCHY **/
+
+		a {
+			text-decoration: none;
+			color: #fff;
+			font-family: 'Poppins';
+		}
+
+		a:hover {
+
+		}
+
+		body {
+		font-family: sans-serif;
+		font-size: 24px;
+		font-weight: 400;
+		background-color: #ffeae7;
+		}
+
+		h1 {
+			font-family: "GT-Super";
+			font-size: 60px;
+			margin-top: 0;
+			text-transform: uppercase;
+			
+			/* we could also use font-size: 4rem; to get the same size. 
+			Ultimatley if we were building a site to be completely 
+			responsive then we would want to use this but I am going 
+			to use my Figma File as a refernce and they use absolute values
+			*/
+		}
+
+		h2 {
+			font-family: "GT-Super";
+			font-size: 36px;
+			margin: 0;
+		}
+
+		h3 {
+			font-family: 'Poppins', sans-serif;
+			font-size: 20px;
+			font-weight: 400;
+			line-height: 1.8rem;
+			margin: 0;
+			text-transform: uppercase;
+		}
+
+		h4 {
+			font-family: "GT-Super";
+			font-size: 20px;
+			font-weight: 300;
+			line-height: 1.8rem;
+			margin: 0;
+		}
+
+		h5 {
+			font-family: 'Poppins';
+			font-size: 20px;
+			font-weight: 300;
+			line-height: 1.8rem;
+		}
+
+		p {
+			font-family: 'Poppins', sans-serif;
+			font-size: 16px;
+			font-weight: 300;
+			line-height: 1.8rem;
+			margin: 0px;
+		}
+
+		ul {
+			list-style-type: none;
+		}
+
+
+
+
+/********** 5. HEADER **********/
+
+	header {
+		background-color: #153b84;
+		color: #fff;
+		position: fixed;
+		height: 90px;
+		z-index: 4;
+		font-size: 0.6em;
+
+	}
+
+	header li {
+		float: left;
+		margin-left: 18px;
+	}
+
+	header ul {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		margin-top: 15px;
+	}
+
+	.icon {
+		fill:  whitesmoke;
+	}
+
+	#logo a {
+		display: inline-block;
+		padding: 1rem;
+		max-width: 120px;
+		margin-top: 15px;
+	}
+
+	#search {
+		display: inline-block;
+		border-style: solid;
+		border-color: #fff;
+		margin-left: 10px;
+		padding: 1rem 20px;
+		border-radius: 30px;
+		width: 310px;
+	}
+
+	#search a {
+		line-height: 100px;
+	}
+
+/********** 6. HOME PAGE **********/
+	
+	a.CTA {
+	background-color: #c2402f;
+	font-family: 'Poppins', sans-serif;
 	font-size: 14px;
-	margin-top: 10px;
+	font-weight: 400;
+	color: #fff;
+	padding: 1em 2.5em;
+	border-radius: 2em;
+	}
+	
+	a.CTAtoo {
+		font-family: 'Poppins', sans-serif;
+		font-size: 14px;
+		font-weight: 400;
+		color: #fff;
+		padding: 1em 2.5em;
+		border-radius: 2em;
+		border-style: solid;
+	}
+
+	.btn {
+		border-radius: 50px;
+	}
+
+	.card-chunk span {
+	font-family: "GT-Light";
+	font-size: 34px;
+	}
+
+	.card-chunk h2 {
+		margin: 50px 0;
+	}
+
+	.card-chunk p {
+		margin-bottom: 50px;
+	}
+
+	#feature {
+	margin-top: -470px;
+	}
+
+	#hero {
+	background-image: url("../images/hero1.jpg");
+	background-size: cover;
+	background-color: red;
+	height: 90vh;
+	}
+
+	#hero-chunk {
+		width: 400px;
+		color: #fff;
+		margin-top: 200px;
+		margin-left: 100px;
+	}
+
+	#hero h1 {
+		padding-bottom: 16px;
+	}
+
+	#hero h5 {
+		padding-bottom: 30px;
+	}
+
+	#illust {
+		margin-top: -500px;
+		height: 570px;
+		position: relative;
+		overflow: hidden;
+		padding: 0;
+	}
+
+	#illust h6 {
+		font-size: 10px;
+		color: #fff;
+		position: absolute;
+		right: 20px;
+		bottom: 0px;
+		z-index: -1;
+	}
+
+	#illust img{
+		
+		position: absolute;
+		z-index: -2;
+	}
+
+	#mission {
+	text-align: center;
+	color: #161616;
+	width: 680px;
+	margin: 80px auto;
+	margin-bottom: 160px;
+	}
+
+	#mission h2 {
+		padding-bottom: 60px;
+	}
+
+	#mission p {
+		width: 600px;
+		margin: 0 auto;
+	}
+
+	#paper {
+	background-color: #161616;
+	color: #fff;
+	width: 95vw;
+	height: 720px;
+	margin: 0 auto;
+	border-radius: 20px;
+	margin-bottom: 50px;
+	padding: 100px;
+	display: grid;
+	grid-template-columns: 470px 670px;
+	column-gap: 30px;
+	overflow: hidden;
+	}
+
+	#pencil {
+	background-color: #fff;
+	color: #161616;
+	width: 95vw;
+	margin: 0 auto;
+	border-radius: 20px;
+	padding: 100px;
+	display: grid;
+	grid-template-columns: 670px 470px;
+	column-gap: 30px;
+	overflow: hidden;
+	}
+	#products a {
+	color: #161616;
+	}
+
+	#product-grid {
+		width: 1170px;
+		margin: 50px auto;
+		display: grid;
+		grid-gap: 30px;
+		grid-template-columns: repeat(4, 1fr);
+		text-align: center;
+	}
+
+	#newsletter {
+	height: 20vh;
+	margin-top: 40px;
+	}
+
+	#newsletter .row {
+		margin-bottom: 30px;
+	}
+
+	#newsletter .btn {
+		background-color: none;
+	}
+
+	#newsletter .btn:hover {
+		background-color: black;
+	}
+
+	#splash {
+	width: 100%;
+	height: 100vh;
+	margin-top: -100px;
+	background-image: url("../img/splash.png");
+	background-position: center; /* Center the image */
+	background-repeat: no-repeat; /* Do not repeat the image */
+	background-size: cover; /* Resize the background image to cover the entire container */
+	}
+
+	#video {
+	background-color: black;
+	width: 970px;
+	margin: -300px auto;
+	border-radius: 20px;
+	overflow: hidden;
+	}
+
+	#video video {
+		display: block;
+		margin: 0 auto;
+	}
+
+/********** 7. PENCIL PAGE **********/
+ 
+	aside {
+		font-size: 11px;
+		margin: 20px 0;
+	}
+
+	.blob {
+		border-radius: 37% 63% 59% 41% / 30% 63% 37% 70% ;
+		/** so what happens is that 37 and 30 are in the same corner
+		 but the thing is that it has two diff measuremants on each side 
+		 of the curve
+		 like you know how in illustrator theres a middle part 
+		 of the curve and you can change it with the pin point things
+		 this is basically that but with code **/
+	} 
+	/** source: https://9elements.github.io/fancy-border-radius/#30.37.63.41--. **/
+
+	button {
+		border-radius: 20px;
+		padding: 8px 12px;
+		background-color: orange;
+		color: white;
+		border-style: none;
+	}
+
+	button:hover {
+		transition: .01s;
+		background-color: lightcoral;
+	}
+
+	.chicklet {
+		border-radius: 15px;
+		background-color: black;
+		margin: 10px 10px;
+		padding: 40px 20px 20px 20px;
+		z-index: -10;
+
+	}
+
+	.greenbutton {
+		border-radius: 50%;
+		background-color: rgb(27, 77, 62, 1.0);
+		width: 18px;
+		height: 18px;
+		margin: 5px;
+		position: relative;
+		display: inline-block;
+
+	}
+
+	.yellowbutton {
+		border-radius: 50%;
+		background-color: rgb(255, 216, 0, 1.0);
+		width: 18px;
+		height: 18px;
+		margin: 5px; 
+		z-index: 100;
+		display: inline-block;
+	
+	} 
+
+
+
+
+
+	/** HERO **/ 
+
+		.hero {
+			padding-top: 150px;
+			height: 95vh;
+		}
+
+	/** ANIMATION **/
+
+		/** PENCIL **/
+
+		@keyframes rtl {
+		from {right: -550px;}
+		to {right: 90px;}
+		}
+
+		.pencil { 
+			width: 35%;
+			position: relative; 
+			animation-name: rtl;
+			animation-duration: 5s;
+			animation-fill-mode: forwards;
+			} /** my source of saviour: 
+			https://stackoverflow.com/questions/30437398/css-animate-an-object-and-retain-its-new-position **/
+
+		/** blob **/
+
+		.blob {
+			background-color: yellow;
+			
+			padding: 60px;
+			animation-name: blob;
+			animation-duration: 4s;
+			animation-iteration-count: infinite;
+		}
+
+		@keyframes blob { 
+			0% {background-color: yellow; border-radius: 37% 63% 59% 41% / 30% 63% 37% 70%;}
+			50% {background-color: darkgreen; border-radius: 61% 39% 39% 61% / 60% 63% 37% 40% ;}
+			100% {background-color: yellow; border-radius: 37% 63% 59% 41% / 30% 63% 37% 70%;}
+
+		 }
+
+		/** so what happens is that 37 and 30 are in the same corner
+		 but the thing is that it has two diff measuremants on each side 
+		 of the curve
+		 like you know how in illustrator theres a middle part 
+		 of the curve and you can change it with the pin point things
+		 this is basically that but with code **/
+	} /** source: https://9elements.github.io/fancy-border-radius/#30.37.63.41--. **/
+
+
+	
+
+/********** 8. ABOUT PAGE **********/
+
+	#aboutHero {
+	background-size: cover;
+	background-color: #161616;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	padding-bottom: 200px;
+	}
+
+	#aboutHero h1 {
+		color: #fff;
+	}
+
+	.adjust-height {
+	line-height: 6rem;
+	}
+
+	.bright {
+	color: #fff;
+	}
+
+	.fixedHalf {
+	width: 50%;
+	position: fixed;
+	margin-top: -250px;
+	margin-left: 25vw;
+	}
+
+	.scrollHalf {
+	width: 50%;
+	margin-left: 50%;
+	margin-top: -180px;
+	overflow: hidden;
+	padding-right: 15%;
+	}
+
+/********** 9. FOOTER **********/
+
+
+#bottom {
+	justify-content: space-between;
+	font-size: 12px;
+	margin-top: 40px;
+	color: antiquewhite;
 }
 
-section {
-	margin: 90px 0;
+.copyright {
+	margin-top: 50px;
+	margin-bottom: 115px;
+	font-size: 85%;
+}
+
+.copyright a {
+ 	font-weight: normal;
+ 	text-transform: none;
+}
+
+footer {
+	background-color: #252321; /* dark grey almost black */
+	color: #a39e93; /* ecru */
+	padding-top: 35px;
+	font-size: 90%;
+}
+footer ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+footer li {
+	margin-bottom: 8px;
+}
+
+footer li a {
+	color: #66615a; /* brown */
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+footer .bright li a {
+	color: #f1eae1; /* light ecru */
+}
+
+footer li a:hover {
+	color: #c94a00; /* orange */
+}
+
+@media only screen and (max-width: 575px) {
+	footer {
+		text-align: center;
+	}
+
+	footer img {
+		padding-bottom: 15px;
+	}
+}
+
+#foot-links {
+	margin-top: 40px;
+}
+
+#foot-links li:first-child {
+	font-weight: 600;
+	padding-bottom: 30px;
+}
+
+#foot-links ul {
+	display: flex;
+	flex-direction: column;
+}
+
+#foot-links li {
+	text-align: left;
+}
+
+#foot-links img {
+	max-width: 70px;
+}
+
+#legal {
+	text-align: right;
+}
+
+#legal span {
+	margin-left: 30px;
+}
+
+#partners {
+	text-align: center;
+	color: #fff;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+	margin-bottom: 30px;
+	padding: 0 5%;
+}
+
+#partners ul {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+#socials {
+	display: flex;
+	flex-direction: row;
 }
 
 
-/** experiment **/ 
-
-@keyframes rtl {
-	0% {right: 0;}
-	/**25% {right: 100px;}
-	50% {right: 125px;}
-	75% {right: 150px;}**/
-	100% {right: 170px;}
 
 
 
-}
+
+
+
+
 
 
 
