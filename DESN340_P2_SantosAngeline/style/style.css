@@ -7,8 +7,8 @@
 4. TYPE RULES
 5. HEADER
 6. HOMEPAGE
-7. PENCIL PAGE 
-8. ABOUT PAGE
+7. ABOUT PAGE
+8. PENCIL PAGE 
 9. FOOTER 
 
 
@@ -138,6 +138,10 @@ img {
 			margin: 0px;
 		}
 
+		.tighten {
+			letter-spacing: -0.03em;
+		}
+
 		ul {
 			list-style-type: none;
 		}
@@ -193,7 +197,7 @@ img {
 
 	#search a {
 		line-height: 100px;
-	}
+	} 
 
 /********** 6. HOME PAGE **********/
 	
@@ -379,136 +383,18 @@ img {
 		display: block;
 		margin: 0 auto;
 	}
-
-/********** 7. PENCIL PAGE **********/
- 
-	aside {
-		font-size: 11px;
-		margin: 20px 0;
-	}
-
-	.blob {
-		border-radius: 37% 63% 59% 41% / 30% 63% 37% 70% ;
-		/** so what happens is that 37 and 30 are in the same corner
-		 but the thing is that it has two diff measuremants on each side 
-		 of the curve
-		 like you know how in illustrator theres a middle part 
-		 of the curve and you can change it with the pin point things
-		 this is basically that but with code **/
-	} 
-	/** source: https://9elements.github.io/fancy-border-radius/#30.37.63.41--. **/
-
-	button {
-		border-radius: 20px;
-		padding: 8px 12px;
-		background-color: orange;
-		color: white;
-		border-style: none;
-	}
-
-	button:hover {
-		transition: .01s;
-		background-color: lightcoral;
-	}
-
-	.chicklet {
-		border-radius: 15px;
-		background-color: black;
-		margin: 10px 10px;
-		padding: 40px 20px 20px 20px;
-		z-index: -10;
-
-	}
-
-	.greenbutton {
-		border-radius: 50%;
-		background-color: rgb(27, 77, 62, 1.0);
-		width: 18px;
-		height: 18px;
-		margin: 5px;
-		position: relative;
-		display: inline-block;
-
-	}
-
-	.yellowbutton {
-		border-radius: 50%;
-		background-color: rgb(255, 216, 0, 1.0);
-		width: 18px;
-		height: 18px;
-		margin: 5px; 
-		z-index: 100;
-		display: inline-block;
-	
-	} 
-
-
-
-
-
-	/** HERO **/ 
-
-		.hero {
-			padding-top: 150px;
-			height: 95vh;
-		}
-
-	/** ANIMATION **/
-
-		/** PENCIL **/
-
-		@keyframes rtl {
-		from {right: -550px;}
-		to {right: 90px;}
-		}
-
-		.pencil { 
-			width: 35%;
-			position: relative; 
-			animation-name: rtl;
-			animation-duration: 5s;
-			animation-fill-mode: forwards;
-			} /** my source of saviour: 
-			https://stackoverflow.com/questions/30437398/css-animate-an-object-and-retain-its-new-position **/
-
-		/** blob **/
-
-		.blob {
-			background-color: yellow;
-			
-			padding: 60px;
-			animation-name: blob;
-			animation-duration: 4s;
-			animation-iteration-count: infinite;
-		}
-
-		@keyframes blob { 
-			0% {background-color: yellow; border-radius: 37% 63% 59% 41% / 30% 63% 37% 70%;}
-			50% {background-color: darkgreen; border-radius: 61% 39% 39% 61% / 60% 63% 37% 40% ;}
-			100% {background-color: yellow; border-radius: 37% 63% 59% 41% / 30% 63% 37% 70%;}
-
-		 }
-
-		/** so what happens is that 37 and 30 are in the same corner
-		 but the thing is that it has two diff measuremants on each side 
-		 of the curve
-		 like you know how in illustrator theres a middle part 
-		 of the curve and you can change it with the pin point things
-		 this is basically that but with code **/
-	} /** source: https://9elements.github.io/fancy-border-radius/#30.37.63.41--. **/
-
-
 	
 
-/********** 8. ABOUT PAGE **********/
+/********** 7. ABOUT PAGE **********/
 
 	#aboutHero {
-	background-size: cover;
-	background-color: #161616;
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	padding-bottom: 200px;
+		background-size: cover;
+		padding-right: 0;
+		background-color: #161616;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		padding-bottom: 200px;
 	}
 
 	#aboutHero h1 {
@@ -538,65 +424,171 @@ img {
 	padding-right: 15%;
 	}
 
+
+/********** 8. PENCIL PAGE **********/
+ 
+	aside {
+		font-size: 11px;
+		margin: 20px 0;
+		/** so what happens is that 37 and 30 are in the same corner
+		 but the thing is that it has two diff measuremants on each side 
+		 of the curve
+		 like you know how in illustrator theres a middle part 
+		 of the curve and you can change it with the pin point things
+		 this is basically that but with code **/
+	}
+
+
+	/** source: https://9elements.github.io/fancy-border-radius/#30.37.63.41--. **/
+
+	button {
+		border-radius: 15px;
+
+		padding: 8px 15px;
+		background-color: orange;
+		color: white;
+		border-style: none;
+		font-size: 18px;
+	}
+
+	button:hover {
+		transition: 200ms;
+		background-color: lightcoral;
+	}
+
+	.chicklet {
+		border-radius: 15px;
+		background-color: black;
+		margin: 10px 10px;
+		padding: 50px 50px 30px 50px;
+		z-index: -10;
+		color: white;
+
+	}
+
+
+
+	/** BUTTONS **/
+
+	.greenbutton {
+		border-radius: 50%;
+		background-color: rgb(27, 77, 62, 1.0);
+		width: 18px;
+		height: 18px;
+		margin: 5px;
+		position: relative;
+		display: inline-block;
+	}
+
+	.yellowbutton {
+		border-radius: 50%;
+		background-color: rgb(255, 216, 0, 1.0);
+		width: 18px;
+		height: 18px;
+		margin: 5px; 
+		z-index: 100;
+		display: inline-block;
+	}
+
+	/** HERO **/ 
+
+		.hero {
+			padding-top: 150px;
+			position: relative;
+
+		}
+
+	/** ANIMATION **/
+		/** PENCIL **/
+
+		@keyframes rtl {
+		from {right: -550px;}
+		to {right: 90px;}
+		}
+
+		.pencil { 
+			position: relative;
+			animation-name: rtl;
+			animation-duration: 5s;
+			animation-fill-mode: forwards;
+			}
+
+			/** my source of saviour: 
+			https://stackoverflow.com/questions/30437398/css-animate-an-object-and-retain-its-new-position **/
+	
+		#blob {
+			background-color: white;
+			opacity: .1;
+			position:  absolute;
+			position: fixed;
+			animation-name: blob;
+			animation-duration: 4s;
+			animation-iteration-count: infinite;
+			z-index: -2;
+		} 
+
+		@keyframes blob { 
+			0% {background-color: blueviolet; border-radius: 93% 7% 59% 41% / 35% 59% 41% 65% ; top: 20px; right: -180px;}
+			50% {background-color: blueviolet; border-radius: 25% 75% 38% 62% / 66% 59% 41% 34%  ;top: 20px; right: -180px;}
+			100% {background-color: blueviolet; border-radius: 93% 7% 59% 41% / 35% 59% 41% 65%;top: 20px; right: -180px; }
+		}
+
+		#wave {
+			background-color: white;
+			opacity: .1;
+			position:  relative;
+			animation-name: wave;
+			animation-duration: 4s;
+			animation-iteration-count: infinite;
+			z-index: -7;
+		} 
+
+		@keyframes wave { 
+			0% {background-color: blueviolet; border-radius: 38% 62% 38% 62% / 41% 67% 33% 59%; top:-400px;}
+			50% {background-color: blueviolet; border-radius: 19% 81% 22% 78% / 76% 34% 66% 24% ; top:-450px;}
+			100% {background-color: blueviolet; border-radius: 38% 62% 38% 62% / 41% 67% 33% 59% ; top:-400px;}
+		}
+
+
+
+
 /********** 9. FOOTER **********/
 
-
-#bottom {
-	justify-content: space-between;
-	font-size: 12px;
-	margin-top: 40px;
-	color: antiquewhite;
-}
-
-.copyright {
-	margin-top: 50px;
-	margin-bottom: 115px;
-	font-size: 85%;
-}
-
-.copyright a {
- 	font-weight: normal;
- 	text-transform: none;
-}
-
 footer {
-	background-color: #252321; /* dark grey almost black */
-	color: #a39e93; /* ecru */
-	padding-top: 35px;
-	font-size: 90%;
+	background-color: #161616;
+	border-radius: 125px 125px 0px 0px;
+	color: #fff;
+	position: relative;
+	z-index: 4;
 }
-footer ul {
-	list-style: none;
-	margin: 0;
-	padding: 0;
+
+footer h4 {
+	padding: 2rem;
+	font-family: "GT-Light";
 }
+
+#partners {
+	text-align: center;
+	color: #fff;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+	margin-bottom: 30px;
+	padding: 0 5%;
+}
+
+#partners ul {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
 footer li {
-	margin-bottom: 8px;
-}
-
-footer li a {
-	color: #66615a; /* brown */
-	text-decoration: none;
-	text-transform: uppercase;
-	font-weight: bold;
-}
-
-footer .bright li a {
-	color: #f1eae1; /* light ecru */
-}
-
-footer li a:hover {
-	color: #c94a00; /* orange */
-}
-
-@media only screen and (max-width: 575px) {
-	footer {
-		text-align: center;
-	}
-
-	footer img {
-		padding-bottom: 15px;
-	}
+	text-align: center;
+	font-family: 'Poppins';
+	font-size: 14px;
+	padding-bottom: 15px;
 }
 
 #foot-links {
@@ -621,6 +613,11 @@ footer li a:hover {
 	max-width: 70px;
 }
 
+#socials {
+	display: flex;
+	flex-direction: row;
+}
+
 #legal {
 	text-align: right;
 }
@@ -629,51 +626,9 @@ footer li a:hover {
 	margin-left: 30px;
 }
 
-#partners {
-	text-align: center;
-	color: #fff;
-	width: 100%;
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: 20px;
-	margin-bottom: 30px;
-	padding: 0 5%;
-}
-
-#partners ul {
-	display: flex;
-	flex-direction: row;
+#bottom {
 	justify-content: space-between;
+	font-size: 12px;
+	margin-top: 40px;
+	color: antiquewhite;
 }
-
-#socials {
-	display: flex;
-	flex-direction: row;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
