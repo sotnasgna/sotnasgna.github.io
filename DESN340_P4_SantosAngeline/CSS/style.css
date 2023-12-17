@@ -451,9 +451,8 @@ body {
 /* Custom Font 'NerettoSans-Regular' */
 @font-face {
   font-family: 'NerettoSans-Regular';
-  src: url('NerettoSans-Regular.woff2') format('woff2'),
-       url('NerettoSans-Regular.woff') format('woff'),
-       url('NerettoSans-Regular.otf') format('opentype');
+  src: url('fonts/NerettoSans-Regular.woff') format('woff'),
+       url('fonts/NerettoSans-Regular.otf') format('opentype');
 }
 
 
