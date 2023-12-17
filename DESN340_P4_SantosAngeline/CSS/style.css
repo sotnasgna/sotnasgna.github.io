@@ -1,0 +1,464 @@
+/** STYLE SHEET FOR LITTLE GHOST **/
+
+/********** COLOR CODES
+ * Purple: #BEB7D9
+ * Dark Brown: #4A2B12
+ * Tan: #E0B69E
+ * Yellow: #EFDC83
+ * Vermillion: #CA5437
+ * Turquoise: #72A79F
+ * Pastel Green: #F2FCF3
+ * Muted Blue: #AEC3D0
+ * Background: #F7F7F7
+ * Nav Gray: #EFEFEF
+ * blob color: #EDEBEB
+ * Black: #2F2F2F
+ 
+TABLE OF CONTENTS
+
+1. BOX MODEL FIX
+2. CLEAR FIX
+3. TYPE RULES
+	hierarchy
+	styling
+4. NAVIGATION
+5. ANIMATIONS
+6. HERO
+7. ABOUT US
+8. PRODUCT 
+9. LOCATION
+10. FOOTER
+11. OVERFLOW: HIDE
+
+
+ **********/
+
+/********** 1. BOX MODEL FIX **********/
+
+html {
+	box-sizing: border-box;
+}
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+body { 
+	background-color: #F7F7F7;
+
+ }
+
+
+/********** 2. CLEAR FIX **********/
+
+.row:before,
+.row:after {
+	content: " ";
+	display: table;
+}
+
+.row:after {
+	clear: both;
+}
+
+/********** 3. TYPE RULES **********/
+
+
+	/** Type Hierarchy **/
+
+	h1 {
+		font-family: "neretto sans";
+		font-size: 3em;
+		color: #72A79F;
+		padding: 20px;
+		margin-left: 7px;
+	}
+
+	h2 {
+		font-family: "neretto sans";
+		font-size: 25pt;
+		color: #4A2B12;
+		text-align: center;
+		padding: 20px;
+
+	}
+
+	h3 {
+		font-family: "neretto sans";
+		font-size: 20pt;
+		color: #4A2B12;
+	}
+
+	h4 {
+		font-family: "neretto sans";
+		font-size: 15pt;
+		color: #4A2B12;
+	}
+
+	h5 {
+		font-family: "neretto sans";
+		font-size: 13pt;
+		color: #4A2B12;
+		text-align: center;
+		padding: 10px;
+	}
+
+	h6 {
+		font-family: "Open Sans";
+		font-size: 16px;
+		color: #4A2B12;
+		font-weight: bold;
+	}
+
+	p {
+		font-family: "Open Sans";
+		font-size: 14px;
+		color: #4A2B12;
+		max-width: 100vw;
+	}
+
+	/** Type Styling **/ 
+
+	a { 
+		text-decoration: none;
+		font-family: "neretto sans";
+		font-size: 10pt;
+		color: #4A2B12;	
+	 }
+
+
+/********** 5. NAVIGATION **********/
+
+
+
+
+
+/********** 6. ANIMATION OF BLOBS **********/
+
+	#blob {
+		position: absolute;
+		animation-name: blob;
+		animation-duration: 30s;
+		animation-iteration-count: infinite;
+		z-index: -1;
+
+		background-image: url(../img/cupcup.png);
+		background-size: contain;
+		background-position-x: -94%;
+		background-position-y: -457%;
+		background-attachment: fixed;
+	}
+
+		@keyframes blob { 
+			0% {
+					border-radius: 49% 51% 70% 30% / 62% 54% 46% 38%; 
+					top: -100px; right: -200px;
+
+				}
+
+			50% {
+
+					border-radius: 21% 79% 70% 30% / 31% 31% 69% 69%;
+					top: -100px; right: -200px;
+				}
+
+			100% {
+					border-radius: 49% 51% 70% 30% / 62% 54% 46% 38%;
+					top: -100px; right: -200px;
+				}
+		}
+
+	#backblob {
+		background-color: #EDEBEB;
+		position: absolute;
+		animation-name: backblob;
+		animation-duration: 30s;
+		animation-iteration-count: infinite;
+		z-index: -2;
+		margin: 5px;
+		background-size: cover;
+
+
+	}
+
+		@keyframes backblob { 
+				0% {
+						border-radius: 49% 51% 70% 30% / 62% 54% 46% 38%; 
+					}
+
+				50% {
+						border-radius: 21% 79% 70% 30% / 31% 31% 69% 69%;
+					}
+
+				100% {
+						border-radius: 49% 51% 70% 30% / 62% 54% 46% 38%;
+					}
+		}	
+
+	#locationblob {
+		background-color: #72A79F;
+		position: absolute;
+		animation-name: locationblob;
+		animation-duration: 25s;
+		animation-iteration-count: infinite;
+		z-index: -2;
+		margin-top: -150px;
+		background-size: cover;
+
+
+	}
+
+		@keyframes locationblob { 
+				0% {
+						border-radius: 49% 51% 70% 30% / 62% 54% 46% 38%; 
+						left: -100px;
+
+					}
+
+				50% {
+						border-radius: 21% 79% 70% 30% / 31% 31% 69% 69%;
+						left: -150px;
+					}
+
+				100% {
+						border-radius: 49% 51% 70% 30% / 62% 54% 46% 38%;
+						left: -100px;
+					}
+		}	
+
+
+
+/********** 7. HERO **********/
+
+	#hero {
+		position: relative;
+		padding-top: 200px;
+		
+	}
+
+	#heropic {
+		height: 100vh;
+		background-image: url("../img/little-ghost.png");
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position-x: 150%;
+		background-position-y: 200%;
+	}
+
+
+
+
+/********** 8. ABOUT US **********/
+
+	#about_us {
+		padding-top: 5em;
+	}
+
+	#Cafeshot {
+		width: 100%;
+		border-radius: 20px;
+	}
+
+	a.cta {
+		display: inline-block;
+
+		border-style: solid;
+		border-color: #72A79F;
+		border-width: 5px;
+		border-radius: 25px;
+		padding: 7px 20px;
+		text-transform: uppercase;
+		color: #72A79F;
+		font-weight: bold;
+		font-family: Open Sans;
+
+	}
+
+
+	.mt150 {
+		margin-top: 150px;
+		margin-left: 63px;
+	}
+
+	
+
+
+
+/********** 9. PRODUCTS **********/
+
+/** to make the insides go in just use padding left/right **/
+	#products {
+		padding-top: 100px;
+	}
+
+	.chickletpurple img,
+	.chickletblue img,
+	.chickletyellow img {
+	    position: relative;
+	    top: -100px; /* Adjust the value as needed to control how much the image peeks out */
+	    width: 25%;
+	}
+
+		.chickletgreen img {
+			position: relative;
+			top: -100px;
+			width: 40%;
+
+		}
+
+	#products img {
+		display: block;
+		margin: 0 auto;
+		padding-bottom: 0;
+
+	}
+
+	.chickletpurple {    
+		border-radius: 15px;
+	    background-color: #BEB7D9;
+	    margin: 80px 10px;
+	    padding: 50px 50px 50px 50px;
+	    z-index: -10;
+	    color: white;
+
+	}
+
+	.chickletgreen {    
+		border-radius: 15px;
+	    background-color: #72A79F;
+	    margin: 80px 10px;
+	    padding: 50px 50px 50px 50px;
+	    z-index: -10;
+	    color: white;
+	}
+
+	.chickletblue {    
+		border-radius: 15px;
+	    background-color: #AEC3D0;
+	    margin: 200px 10px 80px 10px;
+	    padding: 50px 50px 50px 50px;
+	    z-index: -10;
+	    color: white;
+	}
+
+	.chickletyellow {    
+		border-radius: 15px;
+	    background-color: #EFDC83;
+	    margin: 40px 10px;
+	    padding: 50px 50px 50px 50px;
+	    z-index: -10;
+	    color: white;
+	}
+
+
+/********** 10. LOCATION **********/
+
+	.m7 {
+		margin-left: 7px;
+	}
+
+	#location {
+		padding-top: 100px;
+		position: relative;
+	}
+
+	#location h3,
+	#location a,
+	#location p {
+		color: #F2FCF3
+	}
+
+	#location a {
+		font-family: Open Sans;
+		border-radius: 20px;
+		background-color: #CA5437;
+		padding: 7px 20px;
+	}
+
+
+
+/********** 11. FOOTER **********/
+
+
+	#footer h6 {
+		color: #EFDC83;
+		font-family: neretto sans;
+	}
+
+	#footer p,
+	#footer a {
+		color: #F2FCF3;
+		padding: 10px 0px;
+	}
+
+	#footer {
+		background-color: #2F2F2F;
+		border-radius: 50px 50px 0px 0px;
+		color: #F2FCF3;
+		position: relative;
+		z-index: 4;
+		padding: 30px;
+	}
+
+
+
+/********** 12. Overflow hide **********/
+
+
+
+#hide {
+	width: 100vw;
+	overflow-x: hidden;
+}
+
+
+/********** 12. MEDIA QUERIES **********/
+
+
+
+@media screen and (max-width: 900px) {
+
+	.offset-1,
+	.offset-2,
+	.mt150 {
+		margin-left: 0;
+	}
+
+
+	.chickletblue {    
+		border-radius: 15px;
+	    background-color: #AEC3D0;
+	    margin: 80px 10px 80px 10px;
+	    padding: 50px 50px 50px 50px;
+	    z-index: -10;
+	    color: white;
+	}
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
