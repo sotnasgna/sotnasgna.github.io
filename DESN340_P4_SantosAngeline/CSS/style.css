@@ -448,17 +448,20 @@ body {
 
 }
 
+/* Custom Font 'NerettoSans-Regular' */
 @font-face {
-
   font-family: 'NerettoSans-Regular';
   src: url('NerettoSans-Regular.woff2') format('woff2'),
        url('NerettoSans-Regular.woff') format('woff'),
        url('NerettoSans-Regular.otf') format('opentype');
-
-   font-family: Open Sans;
-   src: url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&family=Young+Serif&display=swap');
-
 }
+
+/* Google Font 'Open Sans' */
+@font-face {
+  font-family: 'Open Sans';
+  src: url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&family=Young+Serif&display=swap');
+}
+
 
 
 
