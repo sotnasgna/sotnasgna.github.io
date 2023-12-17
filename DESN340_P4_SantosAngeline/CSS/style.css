@@ -54,9 +54,6 @@ body {
  }
 
 
-
-
-
 /********** 2. CLEAR FIX **********/
 
 .row:before,
@@ -75,7 +72,7 @@ body {
 	/** Type Hierarchy **/
 
 	h1 {
-		font-family: "neretto sans";
+		font-family: "NerettoSans-Regular";
 		font-size: 3em;
 		color: #72A79F;
 		padding: 20px;
@@ -83,7 +80,7 @@ body {
 	}
 
 	h2 {
-		font-family: "neretto sans";
+		font-family: "NerettoSans-Regular";
 		font-size: 25pt;
 		color: #4A2B12;
 		text-align: center;
@@ -92,19 +89,19 @@ body {
 	}
 
 	h3 {
-		font-family: "neretto sans";
+		font-family: "NerettoSans-Regular";
 		font-size: 20pt;
 		color: #4A2B12;
 	}
 
 	h4 {
-		font-family: "neretto sans";
+		font-family: "NerettoSans-Regular";
 		font-size: 15pt;
 		color: #4A2B12;
 	}
 
 	h5 {
-		font-family: "neretto sans";
+		font-family: "NerettoSans-Regular";
 		font-size: 13pt;
 		color: #4A2B12;
 		text-align: center;
@@ -129,7 +126,7 @@ body {
 
 	a { 
 		text-decoration: none;
-		font-family: "neretto sans";
+		font-family: "NerettoSans-Regular";
 		font-size: 10pt;
 		color: #4A2B12;	
 	 }
@@ -141,6 +138,10 @@ body {
 	background-color: #EFEFEF;
 	margin-top: 20px;
 	border-radius: 20px;
+	}
+
+	.navbar-nav, .navbar-brand {
+		color: #4A2B12;
 	}
 
 
@@ -213,7 +214,7 @@ body {
 		animation-iteration-count: infinite;
 		z-index: -2;
 		margin-top: -150px;
-		background-size: cover;
+
 
 
 	}
