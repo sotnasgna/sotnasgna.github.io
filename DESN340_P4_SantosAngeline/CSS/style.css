@@ -447,11 +447,9 @@ body {
 
 }
 
-@media screen and (max-width: 390px) {
-
-
-
-
+@font-face {
+	font-family: NerettoSans;
+	src: url(../fonts/NerettoSans-Regular.otf);
 }
 
 
