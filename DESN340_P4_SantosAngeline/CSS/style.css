@@ -291,6 +291,17 @@ body {
 		margin-left: 63px;
 	}
 
+	#doodles {
+		background-image: url(img/doodles.png);
+		z-index: -3;
+		position: absolute;
+		top: 999px;
+		background-size: 400%;
+		opacity: .3;
+		height: 62%;
+		left: -727px;
+	}
+
 	
 
 
